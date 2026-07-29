@@ -1,0 +1,11 @@
+﻿review_id,gift_name,category,review_decision,actual_cost,budget_cost,market_price,is_selectable,lifecycle_status,needs_manual_review,apply_status,apply_notes
+review_fcce0566,2026年期货人台历,学习资料,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_b9669496,亚朵星球枕,实物,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_58161867,100元京东E卡,优惠券,确认,100,100,100,TRUE,confirmed,FALSE,active,卡券金额明确，按面额计入预算成本。
+review_4d236d26,便携屏,实物,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_be2d0fc4,充电宝,实物,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_46ae9265,养生壶,实物,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_806b2279,小米行李箱,实物,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_f99e0252,带鱼屏,实物,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_abae299b,电动牙刷,实物,确认,,,,FALSE,confirmed_needs_pricing,TRUE,confirmed_needs_pricing,已确认纳入候选，但缺少预算成本，暂不进入自动推荐。
+review_db7aef1b,200元京东卡,优惠券,确认,200,200,200,TRUE,confirmed,FALSE,active,卡券金额明确，按面额计入预算成本。

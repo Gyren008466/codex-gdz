@@ -1,0 +1,6 @@
+﻿gift_id,gift_name,category,actual_cost,budget_cost,market_price,perceived_value,is_inventory,is_zero_budget,stock_status,suitable_months,suitable_seasons,suitable_events,suitable_persona,suitable_play_types,source_type,source_ref,confidence,notes
+gift_625e126e,好用的指标手册,学习资料,0,0,,,True,True,充足,全年,全年,普通直播;大促;课程种草;成交后加赠,期货交易用户;TradingHero用户;指标学习用户,主播特权;前N名;保底赠送;学习礼包;福利叠加,内部库存,用户指定0元库存礼品,高,指标学习、功能教育、成交后加赠
+gift_34d42bc0,黄金手机贴,实物,0,0,,,True,True,充足,全年,全年,普通直播;大促;课程种草;成交后加赠,期货交易用户;TradingHero用户;指标学习用户,主播特权;前N名;保底赠送;学习礼包;福利叠加,内部库存,用户指定0元库存礼品,高,低成本实物感知、主播特权加赠
+gift_aeab9c08,马年钥匙扣,实物,0,0,,,True,True,充足,全年,全年,普通直播;大促;课程种草;成交后加赠,期货交易用户;TradingHero用户;指标学习用户,主播特权;前N名;保底赠送;学习礼包;福利叠加,内部库存,用户指定0元库存礼品,高,低成本实物感知、主播特权加赠
+gift_b12130e4,订单流桌垫,学习资料,0,0,,,True,True,充足,全年,全年,普通直播;大促;课程种草;成交后加赠,期货交易用户;TradingHero用户;指标学习用户,主播特权;前N名;保底赠送;学习礼包;福利叠加,内部库存,用户指定0元库存礼品,高,订单流学习、产品相关权益
+gift_487f276e,黄金知识桌垫,学习资料,0,0,,,True,True,充足,全年,全年,普通直播;大促;课程种草;成交后加赠,期货交易用户;TradingHero用户;指标学习用户,主播特权;前N名;保底赠送;学习礼包;福利叠加,内部库存,用户指定0元库存礼品,高,黄金知识学习、产品相关权益

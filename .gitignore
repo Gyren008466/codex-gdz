@@ -1,0 +1,8 @@
+.agents/
+.codex/
+node_modules/
+.env
+.env.*
+*.log
+*.tmp
+*.bak

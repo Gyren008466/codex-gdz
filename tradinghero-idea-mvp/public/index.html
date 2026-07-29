@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradingHero 鬼点子生成器 MVP</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">TradingHero Live Marketing</p>
+        <h1>鬼点子生成器 MVP</h1>
+      </div>
+      <div class="status-pill" id="giftStatus">礼品库读取中</div>
+    </header>
+
+    <main class="app-shell">
+      <section class="workspace">
+        <form class="control-panel" id="planForm">
+          <div class="section-heading">
+            <h2>活动条件</h2>
+            <button class="icon-button" type="submit" title="生成方案" aria-label="生成方案">↻</button>
+          </div>
+
+          <label>
+            活动日期
+            <input type="date" name="activityDate" value="2026-07-15" />
+          </label>
+
+          <label>
+            旗舰年售价
+            <input type="number" name="basePrice" value="3250" min="1" step="10" />
+          </label>
+
+          <div class="two-col">
+            <label>
+              福利预算下限
+              <input type="number" name="budgetLow" value="150" min="0" step="50" />
+            </label>
+            <label>
+              福利预算上限
+              <input type="number" name="budgetHigh" value="200" min="0" step="50" />
+            </label>
+          </div>
+
+          <label>
+            活动目标
+            <select name="goal">
+              <option>冲GMV</option>
+              <option>冲销量</option>
+              <option>互动增强</option>
+              <option>前置蓄水</option>
+            </select>
+          </label>
+
+          <label>
+            生成模式
+            <select name="mode">
+              <option>混合模式</option>
+              <option>参考历史</option>
+              <option>不参考历史</option>
+            </select>
+          </label>
+
+          <div class="switch-row">
+            <label class="switch">
+              <input type="checkbox" name="allowPriceDiscount" checked />
+              <span>允许立减金</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" name="allowTrendGift" checked />
+              <span>允许趋势礼品</span>
+            </label>
+          </div>
+
+          <button class="primary-action" type="submit">生成 3 个方案</button>
+        </form>
+
+        <section class="result-panel">
+          <div class="section-heading">
+            <h2>方案结果</h2>
+            <button class="icon-button" type="button" id="copyPrompt" title="复制 Skill 调用提示" aria-label="复制 Skill 调用提示">⧉</button>
+          </div>
+          <div id="setupBox" class="setup-box">填写活动条件后生成方案。</div>
+          <div id="plans" class="plans-grid"></div>
+        </section>
+      </section>
+
+      <section class="library-band">
+        <div class="section-heading">
+          <h2>礼品库</h2>
+          <div class="filters">
+            <select id="giftTypeFilter" title="礼品类型">
+              <option value="">全部类型</option>
+              <option value="gift">普通礼品</option>
+              <option value="voucher">京东卡/券</option>
+              <option value="price_discount">立减金</option>
+            </select>
+            <select id="giftTrendFilter" title="趋势礼品">
+              <option value="">全部来源</option>
+              <option value="trend">趋势礼品</option>
+              <option value="inventory">库存/内部</option>
+            </select>
+          </div>
+        </div>
+        <div class="gift-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>礼品</th>
+                <th>类型</th>
+                <th>预算</th>
+                <th>来源</th>
+                <th>规则</th>
+              </tr>
+            </thead>
+            <tbody id="giftRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="trend-band">
+        <div class="section-heading">
+          <h2>趋势候选</h2>
+          <button class="secondary-action" type="button" id="loadTrendReview">刷新候选表</button>
+        </div>
+
+        <div class="trend-controls">
+          <label>
+            关键词
+            <input id="trendKeywords" value="夏季办公室礼品,交易员桌面用品,100元礼品,京东E卡,立减金" />
+          </label>
+          <label>
+            候选数量
+            <input id="maxCandidates" type="number" value="20" min="1" max="50" />
+          </label>
+          <button class="secondary-action" type="button" id="generateTrends">更新趋势礼品</button>
+          <button class="secondary-action" type="button" id="saveReview">保存审核</button>
+          <button class="danger-light" type="button" id="mergeReview">合并已确认</button>
+        </div>
+
+        <div class="review-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>候选礼品</th>
+                <th>参考价</th>
+                <th>评分</th>
+                <th>状态</th>
+                <th>预算成本</th>
+                <th>库存状态</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody id="reviewRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
